@@ -24,6 +24,9 @@ for i_group in range(N_GROUPS):
     group_data = load_group_data(i_group)
     group_means[i_group] = np.mean(group_data)
 
+# print the mean values
+print(group_means)
+
 # plot the means
 plt.plot(group_means)
 plt.xlabel('Group')
